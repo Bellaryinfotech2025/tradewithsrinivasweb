@@ -114,7 +114,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min
 
   <div class="section">
     <div class="price-block">
-      <div class="price-tag"><sup>₹15000</sup></div>
+      <div class="price-tag"><sup>₹1</sup></div>
       <div class="price-sub">per month &nbsp;·&nbsp; cancel anytime</div>
       <div class="price-features">
         <div class="pf">
@@ -185,7 +185,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min
       </div>
       <div class="step-row">
         <div class="step-num">3</div>
-        <div class="step-text"><strong>Complete ₹15000 payment</strong> securely via Razorpay</div>
+        <div class="step-text"><strong>Complete ₹1 payment</strong> securely via Razorpay</div>
       </div>
       <div class="step-row">
         <div class="step-num">4</div>
@@ -199,8 +199,8 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f0b429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
     </div>
     <div style="font-family:'Syne',sans-serif;font-size:17px;font-weight:700;color:#f0b429;margin-bottom:8px">Details Saved! Now Complete Payment</div>
-    <div style="font-size:13px;color:var(--muted);margin-bottom:18px;line-height:1.6">Your info has been recorded. Complete the ₹15000payment.</div>
-    <button id="payBtn" style="width:100%;background:#f0b429;color:#000;font-family:'Syne',sans-serif;font-size:15px;font-weight:700;border:none;border-radius:12px;padding:14px;cursor:pointer">Pay ₹15000 via Razorpay →</button>
+    <div style="font-size:13px;color:var(--muted);margin-bottom:18px;line-height:1.6">Your info has been recorded. Complete the ₹1payment.</div>
+    <button id="payBtn" style="width:100%;background:#f0b429;color:#000;font-family:'Syne',sans-serif;font-size:15px;font-weight:700;border:none;border-radius:12px;padding:14px;cursor:pointer">Pay ₹1 via Razorpay →</button>
   </div>
 
   <div id="waSuccessSection" class="wa-success-section" style="margin-top:20px">
@@ -253,8 +253,8 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min
   let userData = {};
 
   function buildWALink() {
-    const msg = "Hi Srinivas,\nI have paid ₹15000 for Premium Trading Signals.\n\nName: " + (userData.name || "") + "\nPhone: " + (userData.phone || "") + "\nEmail: " + (userData.email || "") + "\nPlease approve me.";
-    return "https://chat.whatsapp.com/Kzgj2DKYmmEJ8Rrxp3HJ7j?text=" + encodeURIComponent(msg);
+    const msg = "Hi Srinivas,\nI have paid ₹1 for Premium Trading Signals.\n\nName: " + (userData.name || "") + "\nPhone: " + (userData.phone || "") + "\nEmail: " + (userData.email || "") + "\nPlease approve me.";
+    return "https://chat.whatsapp.com/Cyj8PYGunaQBuPqAhgFsEG?text=" + encodeURIComponent(msg);
   }
 
   function openWhatsAppGroup() {
@@ -277,7 +277,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min
   document.getElementById('payBtn').onclick = function () {
     var options = {
       "key": "rzp_live_ShE4wd4tU0bmvq",
-      "amount": 1500000,
+      "amount": 100,
       "currency": "INR",
       "name": "Trade With Srinivas",
       "description": "Premium Signals Subscription",

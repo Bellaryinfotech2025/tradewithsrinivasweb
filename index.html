@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>Trade with Srinivas</title>
+<title>Premium Trading Signals</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -60,10 +60,8 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min
 .form-input::placeholder{color:var(--muted)}
 .form-input:focus{border-color:var(--gold)}
 
-.btn-subscribe{width:100%;background:var(--gold);color:#000;font-family:'Syne',sans-serif;font-size:16px;font-weight:700;border:none;border-radius:14px;padding:16px;cursor:pointer;letter-spacing:0.5px;transition:all 0.2s;margin-top:4px;display:flex;align-items:center;justify-content:center;gap:8px}
+.btn-subscribe{width:160px;background:var(--gold);color:#000;font-family:'Syne',sans-serif;font-size:15px;font-weight:700;border:none;border-radius:14px;padding:13px 16px;cursor:pointer;letter-spacing:0.5px;transition:all 0.2s;margin-top:4px;display:flex;align-items:center;justify-content:center;gap:8px}
 .btn-subscribe:active{transform:scale(0.98)}
-.btn-subscribe:disabled{opacity:0.6;cursor:not-allowed}
-.btn-arrow{width:18px;height:18px;stroke:#000;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
 
 .steps-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:20px}
 .steps-title{font-family:'Syne',sans-serif;font-size:14px;font-weight:700;color:var(--text);margin-bottom:16px;letter-spacing:0.3px}
@@ -73,21 +71,14 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min
 .step-text{font-size:13px;color:var(--muted);line-height:1.5}
 .step-text strong{color:var(--text);font-weight:500}
 
-.wa-row{display:flex;align-items:center;justify-content:center;gap:10px;background:rgba(37,211,102,0.07);border:1px solid rgba(37,211,102,0.2);border-radius:14px;padding:14px;margin:0 16px}
-.wa-icon{width:36px;height:36px;background:#25d366;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.wa-icon svg{width:20px;height:20px;fill:#fff}
-.wa-info{line-height:1.4}
-.wa-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
-.wa-number{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:#25d366}
-
-.tg-section{display:none;background:linear-gradient(135deg,rgba(0,136,204,0.12),rgba(0,136,204,0.06));border:1px solid rgba(0,136,204,0.3);border-radius:20px;padding:24px;text-align:center;margin:0 16px}
-.tg-icon-wrap{width:56px;height:56px;background:rgba(0,136,204,0.15);border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
-.tg-icon-wrap svg{width:28px;height:28px;fill:#0088cc}
-.tg-title{font-family:'Syne',sans-serif;font-size:17px;font-weight:700;margin-bottom:6px}
-.tg-sub{font-size:13px;color:var(--muted);margin-bottom:18px;line-height:1.5}
-.btn-tg{display:block;background:#0088cc;color:#fff;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;text-decoration:none;border-radius:12px;padding:14px;letter-spacing:0.3px;transition:background 0.2s}
-.btn-tg:active{background:#006fa8}
-.tg-note{font-size:11px;color:var(--muted);margin-top:10px}
+.wa-success-section{display:none;background:linear-gradient(135deg,rgba(37,211,102,0.12),rgba(37,211,102,0.06));border:1px solid rgba(37,211,102,0.3);border-radius:20px;padding:24px;text-align:center;margin:0 16px}
+.wa-success-icon{width:56px;height:56px;background:rgba(37,211,102,0.15);border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.wa-success-icon svg{width:30px;height:30px;fill:#25d366}
+.wa-success-title{font-family:'Syne',sans-serif;font-size:17px;font-weight:700;margin-bottom:6px;color:#25d366}
+.wa-success-sub{font-size:13px;color:var(--muted);margin-bottom:18px;line-height:1.5}
+.btn-wa-join{display:block;background:#25d366;color:#fff;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;text-decoration:none;border-radius:12px;padding:14px;letter-spacing:0.3px;transition:background 0.2s;border:none;cursor:pointer;width:100%}
+.btn-wa-join:active{background:#1da851}
+.wa-note{font-size:11px;color:var(--muted);margin-top:10px}
 
 .disclaimer{padding:16px 20px 0;font-size:11px;color:var(--muted);line-height:1.7;text-align:center}
 .disclaimer strong{color:rgba(255,77,109,0.8)}
@@ -97,229 +88,218 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min
 <div class="noise"></div>
 <div class="wrapper">
 
-<div class="hero">
-<img class="hero-img" src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80" alt="Trading chart">
-<div class="hero-overlay"></div>
-<div class="hero-badge">Hello Traders !!</div>
-<div class="hero-title">
-<h1>Trade with Srinivas.<br><span></span></h1>
-</div>
+  <div class="hero">
+    <img class="hero-img" src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80" alt="Trading chart">
+    <div class="hero-overlay"></div>
+    <div class="hero-badge">Hello Traders !!</div>
+    <div class="hero-title">
+      <h1>Trade with Srinivas.<br><span>5% – 10% Monthly Returns</span></h1>
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-val">1/Day</div>
+      <div class="stat-label">Signals</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-val">5–10%</div>
+      <div class="stat-label">Avg Return</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-val">24/7</div>
+      <div class="stat-label">Support</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="price-block">
+      <div class="price-tag"><sup>₹15000</sup></div>
+      <div class="price-sub">per month &nbsp;·&nbsp; cancel anytime</div>
+      <div class="price-features">
+        <div class="pf">
+          <div class="pf-icon"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+          Daily expert stock pick
+        </div>
+        <div class="pf">
+          <div class="pf-icon"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+          Entry, target &amp; stop-loss levels
+        </div>
+        <div class="pf">
+          <div class="pf-icon"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+          Consistent 5% – 10% monthly profit
+        </div>
+        <div class="pf">
+          <div class="pf-icon"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
+          WhatsApp support &amp; group access
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="form-card">
+      <form id="form" autocomplete="off">
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <input class="form-input" type="text" name="name" placeholder="Your full name" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Mobile Number</label>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>
+            <input class="form-input" type="tel" name="phone" placeholder="10-digit mobile number" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email ID</label>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            <input class="form-input" type="email" name="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+
+        <button class="btn-subscribe" type="submit" id="submitBtn">
+          Subscribe Now
+          <svg class="btn-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13,6 19,12 13,18"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="section" style="padding-bottom:20px">
+    <div class="steps-card">
+      <div class="steps-title">How it works</div>
+      <div class="step-row">
+        <div class="step-num">1</div>
+        <div class="step-text"><strong>Fill your details</strong> in the form above</div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">2</div>
+        <div class="step-text"><strong>Click Subscribe Now</strong> to proceed to payment</div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">3</div>
+        <div class="step-text"><strong>Complete ₹15000 payment</strong> securely via Razorpay</div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">4</div>
+        <div class="step-text"><strong>Join WhatsApp Group</strong> after payment</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="paySection" style="display:none;margin:0 16px;background:rgba(240,180,41,0.07);border:1px solid rgba(240,180,41,0.35);border-radius:20px;padding:24px;text-align:center">
+    <div style="width:52px;height:52px;background:rgba(240,180,41,0.15);border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f0b429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+    </div>
+    <div style="font-family:'Syne',sans-serif;font-size:17px;font-weight:700;color:#f0b429;margin-bottom:8px">Details Saved! Now Complete Payment</div>
+    <div style="font-size:13px;color:var(--muted);margin-bottom:18px;line-height:1.6">Your info has been recorded. Complete the ₹15000payment.</div>
+    <button id="payBtn" style="width:100%;background:#f0b429;color:#000;font-family:'Syne',sans-serif;font-size:15px;font-weight:700;border:none;border-radius:12px;padding:14px;cursor:pointer">Pay ₹15000 via Razorpay →</button>
+  </div>
+
+  <div id="waSuccessSection" class="wa-success-section" style="margin-top:20px">
+    <div class="wa-success-icon">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </div>
+    <div class="wa-success-title">Payment Confirmed!</div>
+    <div class="wa-success-sub">Welcome! Click below to join the Premium Signals Group on WhatsApp. Please send your details after joining.</div>
+    <button class="btn-wa-join" id="waJoinBtn">Open WhatsApp Group →</button>
+    <div class="wa-note">Only verified paid members will get full access</div>
+  </div>
+
+  <div style="width:420px;background:#fff;border-radius:20px;padding:18px 22px;display:flex;align-items:center;gap:18px;border:1px solid #d8f3df;box-shadow:0 8px 25px rgba(0,0,0,0.08);font-family:Arial,sans-serif;">
+
+  <div style="width:55px;height:55px;background:#25D366;border-radius:16px;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 15px rgba(37,211,102,0.35);flex-shrink:0;">
+
+    <svg viewBox="0 0 24 24" 
+         style="width:24px;height:24px;fill:#fff;">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/>
+    </svg>
+
+  </div>
+
+  <div>
+
+    <div style="font-size:13px;font-weight:700;color:#25D366;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;">
+      WhatsApp Support
+    </div>
+
+    <div style="font-size:28px;font-weight:700;color:#111;margin-bottom:5px;">
+      9035299266
+    </div>
+
+    <div style="font-size:14px;color:#666;">
+      We're here to help you!
+    </div>
+
+  </div>
+
 </div>
 
-<div class="stats-row">
-<div class="stat-card">
-<div class="stat-val">1/Day</div>
-<div class="stat-label">Signals</div>
-</div>
-<div class="stat-card">
-<div class="stat-val">Good</div>
-<div class="stat-label">Avg Return</div>
-</div>
-<div class="stat-card">
-<div class="stat-val">24/7</div>
-<div class="stat-label">Support</div>
-</div>
-</div>
-
-<div class="section">
-<div class="price-block">
-<div class="price-tag"><sup>₹</sup>1</div>
-<div class="price-sub">per month &nbsp;·&nbsp; cancel anytime</div>
-<div class="price-features">
-<div class="pf">
-<div class="pf-icon"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
-Daily expert stock pick
-</div>
-<div class="pf">
-<div class="pf-icon"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
-Entry, target &amp; stop-loss levels
-</div>
-<div class="pf">
-<div class="pf-icon"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
-Private Telegram group access
-</div>
-<div class="pf">
-<div class="pf-icon"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3"/></svg></div>
-WhatsApp support line
-</div>
-</div>
-</div>
-</div>
-
-<div class="section">
-<div class="form-card">
-<form id="form" autocomplete="off">
-<input type="hidden" name="access_key" value="017080b9-1d21-4076-b2b8-4ea5040869d9">
-<input type="hidden" name="subject" value="New Trading Subscription">
-
-<div class="form-group">
-<label class="form-label">Full Name</label>
-<div class="input-wrap">
-<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-<input class="form-input" type="text" name="name" placeholder="Your full name" required>
-</div>
-</div>
-
-<div class="form-group">
-<label class="form-label">Mobile Number</label>
-<div class="input-wrap">
-<svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>
-<input class="form-input" type="tel" name="phone" placeholder="10-digit mobile number" required>
-</div>
-</div>
-
-<div class="form-group">
-<label class="form-label">Email ID</label>
-<div class="input-wrap">
-<svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
-<input class="form-input" type="email" name="email" placeholder="your@email.com" required>
-</div>
-</div>
-
-<button class="btn-subscribe" type="submit" id="submitBtn">
-Subscribe Now
-<svg class="btn-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13,6 19,12 13,18"/></svg>
-</button>
-</form>
-</div>
-</div>
-
-<div class="section" style="padding-bottom:20px">
-<div class="steps-card">
-<div class="steps-title">How it works</div>
-<div class="step-row">
-<div class="step-num">1</div>
-<div class="step-text"><strong>Fill your details</strong> in the form above</div>
-</div>
-<div class="step-row">
-<div class="step-num">2</div>
-<div class="step-text"><strong>Click Subscribe Now</strong> to proceed to payment</div>
-</div>
-<div class="step-row">
-<div class="step-num">3</div>
-<div class="step-text"><strong>Complete ₹1 payment</strong> securely via Razorpay</div>
-</div>
-<div class="step-row">
-<div class="step-num">4</div>
-<div class="step-text"><strong>Join our Telegram group</strong> — link appears after payment</div>
-</div>
-<div class="step-row">
-<div class="step-num">5</div>
-<div class="step-text"><strong>Get approved</strong> after verification within 24 hrs</div>
-</div>
-</div>
-</div>
-
-<div class="wa-row">
-<div class="wa-icon">
-<svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</div>
-<div class="wa-info">
-<div class="wa-label">WhatsApp Support</div>
-<div class="wa-number">9035299266</div>
-</div>
-</div>
-
-<!-- Pay section shown after form submit -->
-<div id="paySection" style="display:none;margin:20px 16px 0;background:rgba(240,180,41,0.07);border:1px solid rgba(240,180,41,0.35);border-radius:20px;padding:24px;text-align:center">
-<div style="width:52px;height:52px;background:rgba(240,180,41,0.15);border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px">
-<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#f0b429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-</div>
-<div style="font-family:'Syne',sans-serif;font-size:17px;font-weight:700;color:#f0b429;margin-bottom:8px">Details Saved! Now Complete Payment</div>
-<div style="font-size:13px;color:var(--muted);margin-bottom:18px;line-height:1.6">Your info has been recorded. Complete the &#8377;1 payment, then click the second button below to join Telegram.</div>
-<button id="payBtn" style="width:100%;background:#f0b429;color:#000;font-family:'Syne',sans-serif;font-size:15px;font-weight:700;border:none;border-radius:12px;padding:14px;cursor:pointer;margin-bottom:10px">Pay &#8377;1 via Razorpay &#8594;</button>
-<button id="paidBtn" style="width:100%;background:transparent;color:#f0b429;font-family:'Syne',sans-serif;font-size:13px;font-weight:600;border:1px solid rgba(240,180,41,0.4);border-radius:12px;padding:12px;cursor:pointer">I have paid &mdash; Join Telegram Group</button>
-</div>
-
-<div id="tgSection" class="tg-section" style="margin-top:20px">
-<div class="tg-icon-wrap">
-<svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
-</div>
-<div class="tg-title">Payment Confirmed! Join Now</div>
-<div class="tg-sub">Welcome aboard! Tap the button below to open the Telegram group directly.</div>
-<a class="btn-tg" id="tgLink" href="https://t.me/+WzVldk5-c4ZhYmQ9">Open Telegram Group &#8594;</a>
-<div class="tg-note">Only verified paid members will be approved</div>
-</div>
-
-<div class="disclaimer">
-<strong>Risk Warning:</strong> Trading in the stock market involves significant financial risk. Past performance is not indicative of future results. This service is for educational and informational purposes only. Please trade responsibly and only risk capital you can afford to lose.
-</div>
+  <div class="disclaimer">
+    <strong>Risk Warning:</strong> Trading in the stock market involves significant financial risk. Past performance is not indicative of future results. This service is for educational and informational purposes only. Please trade responsibly and only risk capital you can afford to lose.
+  </div>
 
 </div>
 
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script>
-const form = document.getElementById('form');
-const submitBtn = document.getElementById('submitBtn');
-let userData = {};
+  let userData = {};
 
-document.getElementById('paidBtn').style.display = 'none';
-
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const formData = new FormData(form);
-  userData = {
-    name: formData.get("name"),
-    email: formData.get("email"),
-    phone: formData.get("phone")
-  };
-  const originalHTML = submitBtn.innerHTML;
-  submitBtn.innerHTML = 'Saving...';
-  submitBtn.disabled = true;
-  try {
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
-    });
-    const data = await response.json();
-    if (response.ok) {
-      form.reset();
-      const ps = document.getElementById('paySection');
-      ps.style.display = 'block';
-      ps.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      alert("Error: " + data.message);
-    }
-  } catch (error) {
-    alert("Something went wrong. Try again.");
-  } finally {
-    submitBtn.innerHTML = originalHTML;
-    submitBtn.disabled = false;
+  function buildWALink() {
+    const msg = "Hi Srinivas,\nI have paid ₹15000 for Premium Trading Signals.\n\nName: " + (userData.name || "") + "\nPhone: " + (userData.phone || "") + "\nEmail: " + (userData.email || "") + "\nPlease approve me.";
+    return "https://chat.whatsapp.com/Kzgj2DKYmmEJ8Rrxp3HJ7j?text=" + encodeURIComponent(msg);
   }
-});
 
-document.getElementById('payBtn').onclick = function() {
-  var options = {
-    "key": "rzp_live_ShE4wd4tU0bmvq",
-    "amount": 100,
-    "currency": "INR",
-    "name": "Trade With Srinivas",
-    "description": "Premium Signals Subscription",
-    "handler": function(response) {
-      const tg = document.getElementById('tgSection');
-      tg.style.display = 'block';
-      tg.scrollIntoView({ behavior: 'smooth' });
-      setTimeout(function() {
-        window.open('https://t.me/+WzVldk5-c4ZhYmQ9', '_blank');
-      }, 500);
-    },
-    "prefill": {
-      "name": userData.name || "",
-      "email": userData.email || "",
-      "contact": userData.phone || ""
-    },
-    "theme": {
-      "color": "#f0b429"
-    }
+  function openWhatsAppGroup() {
+    window.open(buildWALink(), '_blank');
+  }
+
+  const form = document.getElementById('form');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    userData = {
+      name: form.querySelector('[name="name"]').value.trim(),
+      phone: form.querySelector('[name="phone"]').value.trim(),
+      email: form.querySelector('[name="email"]').value.trim()
+    };
+    form.reset();
+    document.getElementById('paySection').style.display = 'block';
+    document.getElementById('paySection').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  document.getElementById('payBtn').onclick = function () {
+    var options = {
+      "key": "rzp_live_ShE4wd4tU0bmvq",
+      "amount": 1500000,
+      "currency": "INR",
+      "name": "Trade With Srinivas",
+      "description": "Premium Signals Subscription",
+      "handler": function (response) {
+        document.getElementById('waSuccessSection').style.display = 'block';
+        document.getElementById('waSuccessSection').scrollIntoView({ behavior: 'smooth' });
+        setTimeout(openWhatsAppGroup, 800);
+      },
+      "prefill": {
+        "name": userData.name || "",
+        "email": userData.email || "",
+        "contact": userData.phone || ""
+      },
+      "theme": { "color": "#f0b429" }
+    };
+    var rzp = new Razorpay(options);
+    rzp.open();
   };
-  var rzp = new Razorpay(options);
-  rzp.open();
-};
 
-document.getElementById('tgLink').addEventListener('click', function(e) {
-  e.preventDefault();
-  window.open('https://t.me/+WzVldk5-c4ZhYmQ9', '_blank');
-});
+  document.getElementById('waJoinBtn').onclick = function () {
+    openWhatsAppGroup();
+  };
 </script>
 </body>
 </html>
